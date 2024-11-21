@@ -1,5 +1,6 @@
 import requests
 
+
 def test_delete():
     body = {"title":"generated","completed":False}
     response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)
@@ -9,4 +10,3 @@ def test_delete():
     
     
     assert response.status_code == 204
-    
